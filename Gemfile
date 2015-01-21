@@ -2,8 +2,12 @@ source 'https://rubygems.org'
 
 ruby '2.2.0'
 
-# Use paperclip to upload files
+# Use Figaro manage auth_key & auth_secret
+gem 'figaro'
+
+# Use paperclip to upload files with aws s3
 gem 'paperclip', '~> 4.2'
+gem 'aws-sdk'
 
 # For heroku
 group :production do
