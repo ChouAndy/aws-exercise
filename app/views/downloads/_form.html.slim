@@ -1,0 +1,15 @@
+= form_for @download, html: { multipart: true } do |f|
+  - if @download.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@download.errors.count, "error")} prohibited this download from being saved:"
+      ul
+        - @download.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :upload
+    = f.file_field :upload
+  .actions = f.submit

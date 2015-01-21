@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 ruby '2.2.0'
 
+# Use paperclip to upload files
+gem 'paperclip', '~> 4.2'
+
 # For heroku
 group :production do
   gem 'rails_12factor'

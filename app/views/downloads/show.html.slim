@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @download.title
+p
+  strong Upload:
+  = @download.upload
+
+= link_to 'Edit', edit_download_path(@download)
+'|
+= link_to 'Back', downloads_path
