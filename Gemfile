@@ -2,6 +2,21 @@ source 'https://rubygems.org'
 
 ruby '2.2.0'
 
+# Use unicorn as the app server
+gem 'unicorn'
+
+# Use Capistrano for deployment
+group :development do
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv', '~> 2.0' # required
+  gem 'capistrano-rbenv-install', '~> 1.2.0'
+  gem 'capistrano-postgresql', '~> 4.2.0'
+  gem 'capistrano-safe-deploy-to', '~> 1.1.1'
+  gem 'capistrano-faster-assets', '~> 1.0'
+  gem 'capistrano-unicorn-nginx', '~> 3.1.0'
+  gem 'capistrano-secrets-yml', '~> 1.0.0'
+end
+
 # Use Figaro manage auth_key & auth_secret
 gem 'figaro'
 
