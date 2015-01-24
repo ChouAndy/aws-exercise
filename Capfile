@@ -27,6 +27,7 @@ require 'capistrano/faster_assets'
 # require 'capistrano/passenger'
 require 'capistrano/postgresql'
 require 'capistrano/secrets_yml'
+require 'capistrano/figaro_yml'
 require 'capistrano/unicorn_nginx'
 
 # Load custom tasks from `lib/capistrano/tasks' if you have any defined

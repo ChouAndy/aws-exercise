@@ -15,6 +15,7 @@ group :development do
   gem 'capistrano-faster-assets', '~> 1.0'
   gem 'capistrano-unicorn-nginx', '~> 3.1.0'
   gem 'capistrano-secrets-yml', '~> 1.0.0'
+  gem 'capistrano-figaro-yml', '~> 1.0.1'
 end
 
 # Use Figaro manage auth_key & auth_secret
