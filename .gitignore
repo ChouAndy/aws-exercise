@@ -24,3 +24,6 @@
 
 # Ignore .capistrano directory
 .capistrano
+
+# set local rvm gemset
+/.ruby-gemset
